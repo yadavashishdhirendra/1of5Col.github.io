@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .Card__row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .Card__col {
+            flex: 1 0 18%;
+            /* The important bit. This percentage decides your columns. 
+The percent can be px. It just represents your minimum starting width.
+*/
+            margin: 5px;
+            background: tomato;
+            height: 50px;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="Card__row">
+        <div class="Card__col">Col</div>
+        <div class="Card__col">Col</div>
+        <div class="Card__col">Col</div>
+        <div class="Card__col">Col</div>
+    </div>
+</body>
+
+</html>
